@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/QuickSpot-SPMS.iml" filepath="$PROJECT_DIR$/QuickSpot-SPMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Quick-Spot-SPMS.iml" filepath="$PROJECT_DIR$/.idea/Quick-Spot-SPMS.iml" />
     </modules>
   </component>
 </project>
