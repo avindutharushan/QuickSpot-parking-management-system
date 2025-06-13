@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="febdecf8-1ba8-450d-8748-d55758e03f90" name="Changes" comment="Configured the Api-gateway">
+    <list default="true" id="febdecf8-1ba8-450d-8748-d55758e03f90" name="Changes" comment="Configured the user-service">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/lk/ijse/userservice/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +27,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,12 +68,13 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Spring Boot.ApiGatewayApplication.executor": "Run",
     "Spring Boot.EurekaDiscoveryServerApplication.executor": "Run",
     "Spring Boot.UserServiceApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/shan/IdeaProjects/Quick-Spot-SPMS",
+    "last_opened_file_path": "/home/shan/IdeaProjects/Quick-Spot-SPMS/user-service/src/main/java/lk/ijse/userservice",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,8 +86,18 @@
     "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/user-service/src/main/java/lk/ijse/userservice" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
@@ -133,7 +155,7 @@
       <workItem from="1749800497208" duration="77000" />
       <workItem from="1749800595967" duration="53000" />
       <workItem from="1749800673440" duration="68000" />
-      <workItem from="1749800837465" duration="2401000" />
+      <workItem from="1749800837465" duration="6163000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -183,7 +205,23 @@
       <option name="project" value="LOCAL" />
       <updated>1749802381123</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create the user-service">
+      <option name="closed" value="true" />
+      <created>1749803388274</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1749803388274</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Configured the user-service">
+      <option name="closed" value="true" />
+      <created>1749803411793</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1749803411793</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +233,8 @@
     <MESSAGE value="configured the Eureka discovery server" />
     <MESSAGE value="Create the Api-gateway" />
     <MESSAGE value="Configured the Api-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configured the Api-gateway" />
+    <MESSAGE value="Create the user-service" />
+    <MESSAGE value="Configured the user-service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configured the user-service" />
   </component>
 </project>
