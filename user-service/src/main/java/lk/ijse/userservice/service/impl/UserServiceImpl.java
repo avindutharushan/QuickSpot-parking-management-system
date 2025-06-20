@@ -68,4 +68,9 @@ public class UserServiceImpl implements UserService {
                 .orElseThrow(() -> new RuntimeException("User not found with id: " + id));
     }
 
+    @Override
+    public boolean isUserExist(Long id) {
+        return userRepository.existsById(id);
+    }
+
 }

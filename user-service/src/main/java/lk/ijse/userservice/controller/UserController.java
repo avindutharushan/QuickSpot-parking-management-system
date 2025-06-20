@@ -11,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+
 @RestController
 @RequestMapping("/api/v1/user")
 @RequiredArgsConstructor
@@ -46,4 +47,12 @@ public class UserController {
     public ResponseEntity<List<UserDTO>> getAllUsers() {
         return ResponseEntity.ok(userService.getAllUsers());
     }
+
+    @GetMapping("/exists/{id}")
+    public ResponseEntity<Boolean> isUserExist(@PathVariable Long id) {
+        boolean exists = userService.isUserExist(id);
+        return ResponseEntity.ok(exists);
+    }
+
+
 }
