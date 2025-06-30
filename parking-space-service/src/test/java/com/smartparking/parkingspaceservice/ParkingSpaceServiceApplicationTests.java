@@ -1,4 +1,4 @@
-package lk.ijse.parkingspaceservice;
+package com.smartparking.parkingspaceservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

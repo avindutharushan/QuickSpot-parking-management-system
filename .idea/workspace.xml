@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="febdecf8-1ba8-450d-8748-d55758e03f90" name="Changes" comment="build all functions for vehicle-service">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="febdecf8-1ba8-450d-8748-d55758e03f90" name="Changes" comment="vehicle-service done">
+      <change afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice/entity/ParkingSpace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice/entity/Reservation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice/entity/enam/SpaceStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice/entity/enam/SpaceType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/controller/VehicleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/controller/VehicleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/dto/UserDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/dto/VehicleDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/dto/VehicleDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/feign/UserServiceClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/feign/UserServiceClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/repository/VehicleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/repository/VehicleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/service/impl/VehicleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice/service/impl/VehicleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice/ParkingSpaceServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice/ParkingSpaceServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/parking-space-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/parking-space-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +37,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -79,7 +83,7 @@
     &quot;Spring Boot.VehicleServiceApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/shan/IdeaProjects/Quick-Spot-SPMS/vehicle-service/src/main/java/lk/ijse/vehicleservice&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/shan/IdeaProjects/Quick-Spot-SPMS/parking-space-service/src/main/java/lk/ijse/parkingspaceservice&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -103,6 +107,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/parking-space-service/src/main/java/lk/ijse/parkingspaceservice" />
       <recent name="$PROJECT_DIR$/vehicle-service/src/main/java/lk/ijse/vehicleservice" />
       <recent name="$PROJECT_DIR$/user-service/src/main/java/lk/ijse/userservice" />
     </key>
@@ -136,6 +141,13 @@
     <configuration name="EurekaDiscoveryServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eureka-discovery-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="lk.ijse.eurekadiscoveryserver.EurekaDiscoveryServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingSpaceServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="parking-space-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="lk.ijse.parkingspaceservice.ParkingSpaceServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -178,7 +190,10 @@
       <workItem from="1749817966713" duration="6174000" />
       <workItem from="1749876392076" duration="45000" />
       <workItem from="1750392654654" duration="5224000" />
-      <workItem from="1750766897257" duration="2512000" />
+      <workItem from="1750766897257" duration="5763000" />
+      <workItem from="1750821121465" duration="111000" />
+      <workItem from="1751198430287" duration="211000" />
+      <workItem from="1751252179546" duration="356000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -260,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749831343026</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="vehicle-service done">
+      <option name="closed" value="true" />
+      <created>1750770111227</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750770111227</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +299,8 @@
     <MESSAGE value="Configured the user-service" />
     <MESSAGE value="create the vehicle-service" />
     <MESSAGE value="build all functions for vehicle-service" />
-    <option name="LAST_COMMIT_MESSAGE" value="build all functions for vehicle-service" />
+    <MESSAGE value="vehicle-service done" />
+    <option name="LAST_COMMIT_MESSAGE" value="vehicle-service done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
