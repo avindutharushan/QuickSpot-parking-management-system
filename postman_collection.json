@@ -1,22 +1,76 @@
 {
 	"info": {
-		"_postman_id": "b833f3fa-46e3-44e2-9f9f-6512186a9fa5",
-		"name": "SPMS - Endpoints",
+		"_postman_id": "676965fa-fabc-4767-9b1f-767d3f7db0d7",
+		"name": "QuickSpot-SPMS",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "40188634"
+		"_exporter_id": "40189031"
 	},
 	"item": [
 		{
-			"name": "user",
+			"name": "USER-SERVICE",
 			"item": [
 				{
-					"name": "register",
+					"name": "delete-user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": 2,\n  \"username\": \"aa\",\n  \"password\": \"aa\",\n  \"email\": \"aa@example.com\",\n  \"role\": \"ADMIN\"\n}\n\n\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/user-service/api/v1/user/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-service",
+								"api",
+								"v1",
+								"user",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user-service/api/v1/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-service",
+								"api",
+								"v1",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save-user",
 					"request": {
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"virajdilshan2019@gmail.com\",\r\n    \"username\":\"viraj\",\r\n    \"password\":\"viraj2002\",\r\n    \"contact\":\"0741092019\",\r\n    \"address\":\"matara\",\r\n    \"role\":\"USER\"\r\n}",
+							"raw": "{\n  \"id\": 10,\n  \"username\": \"avindutharushan\",\n  \"password\": \"12345678\",\n  \"email\": \"avindutharushan9900@gmail.com\",\n  \"role\": \"OWNER\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -42,16 +96,13 @@
 					"response": []
 				},
 				{
-					"name": "login-auth",
+					"name": "update-user",
 					"request": {
-						"auth": {
-							"type": "noauth"
-						},
-						"method": "POST",
+						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"virajdilshan2019@gmail.com\",\r\n    \"password\":\"viraj2002\"\r\n}",
+							"raw": "{\n  \"id\": 3,\n  \"username\": \"new_user1111\",\n  \"password\": \"123111\",\n  \"email\": \"new111@example.com\",\n  \"role\": \"DRIVER\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -59,49 +110,29 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/auth-service/api/v1/auth/authenticate",
+							"raw": "http://localhost:8080/user-service/api/v1/user",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "8080",
 							"path": [
-								"auth-service",
+								"user-service",
 								"api",
 								"v1",
-								"auth",
-								"authenticate"
+								"user"
 							]
 						}
 					},
 					"response": []
 				},
 				{
-					"name": "update",
+					"name": "get-selected-user",
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "eyJhbGciOiJIUzUxMiJ9.eyJyb2xlIjoiVVNFUiIsInN1YiI6InZpcmFqZGlsc2hhbjIwMTlAZ21haWwuY29tIiwiaWF0IjoxNzUwNjg3OTAyLCJleHAiOjE3NTE3MjQ3MDJ9.jaaSKD1UD2L6C8kZ0EvG7HcX3hB8SLio5Buv7uD5X7_XjyhsvOu3M-JhiA-Jk2zP3__5TR-IgW_ORhMFE2zMgQ",
-									"type": "string"
-								}
-							]
-						},
-						"method": "PUT",
+						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"email\":\"virajdilshan2019@gmail.com\",\r\n    \"username\":\"viraj\",\r\n    \"password\":\"viraj2002\",\r\n    \"contact\":\"0741092019\",\r\n    \"address\":\"matara\",\r\n    \"role\":\"USER\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "http://localhost:8080/user-service/api/v1/user/update",
+							"raw": "http://localhost:8080/user-service/api/v1/user/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -112,7 +143,55 @@
 								"api",
 								"v1",
 								"user",
-								"update"
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "is-exist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user-service/api/v1/user/exists/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-service",
+								"api",
+								"v1",
+								"user",
+								"exists",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-user-by-email",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/user-service/api/v1/user/get/avindutharushan9900@gmail.com",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"user-service",
+								"api",
+								"v1",
+								"user",
+								"get",
+								"avindutharushan9900@gmail.com"
 							]
 						}
 					},
@@ -121,26 +200,16 @@
 			]
 		},
 		{
-			"name": "vehicle-service",
+			"name": "VEHICLE-SERVICE",
 			"item": [
 				{
-					"name": "save",
+					"name": "save-vehicle",
 					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "sdfgh",
-									"type": "string"
-								}
-							]
-						},
 						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"licensePlate\":\"BHO4141\",\r\n    \"model\":\"Honda\",\r\n    \"type\":\"BIKE\",\r\n    \"userEmail\":\"virajdilshan2019@gmail.com\"\r\n}",
+							"raw": "{\n  \"vehicleId\": 5,\n  \"userId\": 1,\n  \"licensePlate\": \"ABC-55\",\n  \"make\": \"Toyota\",\n  \"model\": \"Corolla\"\n}\n",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -148,7 +217,60 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/vehicle-service/api/v1/vehicle/register",
+							"raw": "http://localhost:8080/vehicle-service/api/v1/vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vehicle-service",
+								"api",
+								"v1",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update-vehicle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"vehicleId\": 4,\n  \"userId\": 1,\n  \"licensePlate\": \"DEF-5678\",\n  \"make\": \"Honda\",\n  \"model\": \"Civic\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/vehicle-service/api/v1/vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vehicle-service",
+								"api",
+								"v1",
+								"vehicle"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-vehicle",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vehicle-service/api/v1/vehicle/6",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -159,15 +281,59 @@
 								"api",
 								"v1",
 								"vehicle",
-								"register"
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-selected-vehicle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vehicle-service/api/v1/vehicle/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vehicle-service",
+								"api",
+								"v1",
+								"vehicle",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-all-vehicle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/vehicle-service/api/v1/vehicle",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"vehicle-service",
+								"api",
+								"v1",
+								"vehicle"
 							]
 						}
 					},
 					"response": []
 				}
 			]
-		},
-		{
+		},{
 			"name": "parking-space-service",
 			"item": [
 				{
@@ -213,6 +379,38 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"new@example.com\",\n  \"password\": \"123\"\n}\n\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth-service/api/v1/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth-service",
+						"api",
+						"v1",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

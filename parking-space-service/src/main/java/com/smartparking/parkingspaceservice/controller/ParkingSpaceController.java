@@ -19,7 +19,7 @@ public class ParkingSpaceController {
     }
 
     @PostMapping("/create")
-    @PreAuthorize("hasAnyAuthority('USER', 'ADMIN')")
+    @PreAuthorize("hasAnyAuthority('DRIVER', 'ADMIN')")
     ResponseEntity<ResponseDTO> createParkingSpace(@RequestHeader("Authorization") String authorization, @RequestBody ParkingSpaceDTO parkingSpace) {
         int status = parkingSpaceService.save(parkingSpace);
         switch (status) {

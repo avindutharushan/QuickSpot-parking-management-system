@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @Getter
 public class LoginDTO {
-    @Email(message = "Email should be valid")
+    @Email(message = "Email invalid")
     private String email;
     private String password;
 }

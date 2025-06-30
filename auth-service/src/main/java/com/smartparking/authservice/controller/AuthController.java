@@ -58,7 +58,6 @@ public class AuthController {
                 .body(new ResponseDTO(VarList.Created, "Authorization Success", authDTO));
     }
 
-    // Feign Client Methods
     @PostMapping(path = "/validate")
     public ResponseEntity<String> generateToken(@RequestBody UserDTO userDTO) {
         String token = jwtUtil.generateToken(userDTO);
